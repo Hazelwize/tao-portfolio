@@ -1,0 +1,265 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* COLOR PALLETTE */
+/* 
+white: #F2F5FF
+off-white: #E3DFFF
+pink-purple: #9055A2
+dark-purple: #1C062B
+black: #1A1F16 
+*/
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inconsolata', monospace;
+    color: #F2F5FF;
+}
+.flex{
+    display: flex;
+}
+.container{
+    padding: 0;
+    flex-direction: column;
+
+}
+.header__container{
+    background-color: #1A1F16;
+    box-shadow: 0 5px 20px 5px rgba(144, 85, 162, .6);
+    z-index: 2;
+}
+.nav{
+    justify-content: flex-end;
+    padding: 2rem;
+}
+.nav__list{
+    justify-content: flex-end;
+    gap: 3rem;
+}
+.nav__item{
+    font-size: 1.7rem;
+    font-weight: 700;
+    
+}
+.nav__link{
+    color: #F2F5FF; 
+    text-decoration: none;
+}
+
+.main__container{
+    background-color: #1C062B;
+    justify-content: center;
+    padding: 10rem;
+    
+}
+.main__section{
+    width: 40%;
+}
+.main__img{
+    width: 100%;
+    border: 2.5rem solid #E3DFFF;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 5px rgba(144, 85, 162, .6);
+}
+.main__text--container{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0 0 5% 5%;
+
+}
+.main__h1{
+    font-weight: 900;
+    font-size: 3rem;
+}
+.main__p{
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.7rem
+}
+.main__span{
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 300;
+    margin-left: 1.3rem;
+}
+.transition__1{
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(28, 6, 43) 10%, rgb(54,205,237) 80%);
+    height: 20rem;
+    transform: rotate(6deg) skew(6deg) translateY(-7rem) scale(1.006);
+    
+         
+}
+.transition__title{
+    font-size: 6rem;
+    font-weight: 900;
+    color: #F2F5FF;
+    text-shadow: 4px 4px 4px rgba(144, 85, 162, .8);
+    
+}
+.portfolio__controller{
+    background-color:rgb(54,205,237);
+    height: auto;
+    padding: 20rem 2rem;
+    transform: translateY(-20rem);
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.arrow__right{
+    transform: rotate(180deg);
+}
+.project__info{
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    gap: 1.3rem;
+    padding: 1.5rem;
+}
+.portfolio__container{
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+.portfolio__section{
+    justify-content: center;
+}
+.portfolio__block{
+    width: 75%;
+    height: auto;
+    z-index: 2;
+    background: linear-gradient(175deg, rgba(144, 85, 162, 1), rgb(28, 6, 43));
+    border: 3px solid #F2F5FF;
+    box-shadow: 6px 6px 4px 4px  rgba(28, 6, 43,.6);
+    margin-bottom: 2rem;
+    border-radius: 20px;
+    padding: 1.5rem;
+}
+.project__img{
+    width: 100%;
+    border: 3px solid #F2F5FF;
+}
+.transition__title--container{
+    background-color: rgb(26, 31, 22);
+    justify-content: center;
+    align-items: center;
+    padding: 5rem; 
+    transform: rotate(-12deg) skew(-12deg);
+    box-shadow: 15px 10px 5px 5px rgba(28, 6, 43,.7);
+    border: 6px solid #E3DFFF;
+    border-radius: 6px;
+}
+.portfolio__info{
+    width: 50%;
+    margin-top: -3rem;
+    text-shadow: 2px 2px 2px rgba(144, 85, 162, .8);
+    background-color:rgba(144, 85, 162, 1);
+    box-shadow: 5px 8px 5px 5px rgba(28, 6, 43,.6);
+    /* padding: 1rem; */
+    border-radius: 6px;
+    border: 4px solid #F2F5FF;
+    z-index: 1;
+    transform: translateX(-30px) skew(10deg) rotate(10deg);
+}
+.project__info{
+    background-color:rgb(26, 31, 22);
+    padding: 2rem 1rem;
+    border-radius: 6px;
+    border: 4px solid #F2F5FF;
+    box-shadow: 5px 8px 5px 5px rgba(28, 6, 43,.6);
+    z-index: 4;
+    transform: translateX(70px) translateY(-15px) skew(-15deg) rotate(-15deg);
+}
+.project__name{
+    font-size: 3rem;
+    font-weight: 900;
+    transform: skew(5deg) rotate(5deg);
+}
+
+.project__description{
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    transform: skew(5deg) rotate(5deg);
+
+}
+.portfolio__nav{
+    width: 10%;
+    filter: drop-shadow(10px 8px 2px rgba(28,6,43,.6));
+}
+.project__link{ 
+    color: #F2F5FF;
+}
+.transition__2{
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( rgb(54,205,237) 10%, rgba(144, 85, 162, 1) 80%);
+    height: 20rem;
+    transform: rotate(6deg) skew(6deg) translateY(-29rem) scale(1.006);        
+}
+.video__controller{
+    background:rgba(144, 85, 162, 1);
+    transform: translateY(-40rem);
+}
+.video__block{
+    width: 60vw;
+    background: linear-gradient(175deg, rgb(28, 6, 43), rgb(54,205,237));
+}
+.video__iframe{
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+.video__info{
+    background: rgb(28, 6, 43);
+}

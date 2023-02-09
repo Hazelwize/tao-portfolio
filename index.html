@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Portfolio site for TaoPanda">
+	<meta name="keywords" content="taopanda, tao, splatoon, software developer, ">
+  
+	<title>TaoPanda Portfolio</title>
+
+	<!-- external CSS link -->          
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/reset.css">
+</head>
+
+<body>
+	<div class="flex container">
+		<section class="header__container">
+			<header class="header">
+				<nav class="flex nav">
+					<ul class="flex nav__list">
+						<li class="nav__item">About Me</li>
+						<li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
+						<li class="nav__item">Contact Me</li>
+					</ul>
+				</nav>
+			</header>
+		</section>
+		<section class="flex main__container">
+			<section class="main__section main__img--container">
+				<img class="main__img" src="./img/avatar.jpg" alt="">
+			</section>
+			<section class="flex main__section main__text--container">
+				<h1 class="main__h1">Hi. I'm TaoPanda<span class="main__span">she/her</span></h1>
+				<p class="main__p">I am a software developer with a deep interest in e-sports and psychology. I enjoy commentating for a few different Splatoon tournaments including "From The Ink Up" & "It's Dangerous To Go Alone".  </p>
+			</section>
+		</section>
+		<div class="flex transition__1">
+			<div id='projects' class="flex transition__title--container">
+				<h2  class="transition__title">Projects</h2>
+			</div>
+		</div>
+		<section  class="flex portfolio__controller">
+			<img class="portfolio__nav" id="leftBtn" src="./img/arrow.png" alt="">
+			<section class="flex portfolio__container">
+				<section class="flex portfolio__section">
+					<section class="portfolio__block">
+						<img id="projectImg" class="project__img" src="./img/good-notes.png" alt="">
+					</section>
+				</section>
+				<section class="flex portfolio__info portfolio__section">
+					<section class="flex project__info">
+						<h2 class="project__name" id="projectName">Good Notes</h2>
+						<p class="project__description"id="projectDesc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, enim quos libero quas, qui necessitatibus voluptates dolorum odit expedita quae tempora nemo repellendus ad iusto explicabo praesentium unde. Eaque, illo! Dolor similique, magnam nesciunt recusandae cum fuga laudantium, dolores provident quam enim ex quos totam, tempora quasi modi! Assumenda, enim?</p>
+						<a id="projectLink" class="project__link project__description" target="_blank" href=''><span>Link to Project</span></a>
+					</section>	
+				</section>
+			</section>
+			<img class="arrow__right portfolio__nav" id="rightBtn" src="./img/arrow.png" alt="">
+		</section>
+		<div class="flex transition__2">
+			<div id='projects' class="flex transition__title--container">
+				<h2  class="transition__title">Videos</h2>
+			</div>
+		</div>
+		<section  class="flex portfolio__controller video__controller">
+			<img class="arrow__right portfolio__nav" id="leftVideoBtn" src="./img/game-arrow.png" alt="">
+			<section class="flex portfolio__container">
+				<section class="flex portfolio__section">
+					<section class="video__block portfolio__block">
+						<iframe id="videoLink" class="video__iframe"src="https://www.youtube.com/embed/i1durE1VXpM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</section>
+				</section>
+				<section class="flex video__info portfolio__info portfolio__section">
+					<section class="flex project__info">
+						<h2 class="project__name" id="videoName">Good Notes</h2>
+						<p class="project__description"id="videoDesc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, enim quos libero quas, qui necessitatibus voluptates dolorum odit expedita quae tempora nemo repellendus ad iusto explicabo praesentium unde. Eaque, illo! Dolor similique, magnam nesciunt recusandae cum fuga laudantium, dolores provident quam enim ex quos totam, tempora quasi modi! Assumenda, enim?</p>
+					</section>	
+				</section>
+			</section>
+			<img class="portfolio__nav" id="rightVideoBtn" src="./img/game-arrow.png" alt="">
+		</section>	
+
+	</div>
+
+
+  
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
