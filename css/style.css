@@ -263,3 +263,27 @@ body{
 .video__info{
     background: rgb(28, 6, 43);
 }
+.socials__section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.socials__list{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+.socials__svg{
+    height: 48px;
+}
+.socials__svg:hover{
+    transform: scale(1.1);
+    fill: #463A52;
+}
+footer{
+    background-color: rgb(26, 31, 22);
+    height: 100px;
+    margin-top: -640px;
+    display: flex;
+    align-items: center;
+}

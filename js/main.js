@@ -39,6 +39,11 @@ const projects = [
 ]
 const videos = [
     {
+        name: 'Rainmaker Tutorial',
+        link: 'https://www.youtube.com/embed/7PS4NAYyxGQ',
+        desc: 'I break down the game phases of every Rainmaker match and show you how to identify each phase.'
+    },
+    {
         name: 'Rainmaker Highlights',
         link: 'https://www.youtube.com/embed/i1durE1VXpM',
         desc: 'This is a compilation of my gameplay in Rainmaker from Splatoon 2.'
